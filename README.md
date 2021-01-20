@@ -1,12 +1,12 @@
 # Memory consumption reproduction case
 
-```
+```bash
 php -v
 PHP 7.4.3 (cli) (built: Oct  6 2020 15:47:56) ( NTS )
 ```
 
 
-```
+```bash
 ./vendor/bin/phpstan analyse --debug -vvv src/MemoryConsumption.php 
 Result cache not used because of debug mode.
 /home/fezfez/work/phpstan-memory/src/MemoryConsumption.php
@@ -26,7 +26,7 @@ Used memory: 372 MB
 
 ```
 
-```
+```bash
 ./vendor/bin/phpstan analyse --debug -vvv src/NoMemoryConsumption.php
 Note: Using configuration file /home/fezfez/work/phpstan-memory/phpstan.neon.
 Result cache not used because of debug mode.
