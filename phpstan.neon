@@ -1,0 +1,13 @@
+parameters:
+    parallel:
+        maximumNumberOfProcesses: 3
+        processTimeout: 500.0
+    inferPrivatePropertyTypeFromConstructor: true
+    reportUnmatchedIgnoredErrors: false
+    checkMissingIterableValueType: false
+    checkGenericClassInNonGenericObjectType: false
+    level: 7
+    paths:
+        - src/MemoryConsumption.php
+    fileExtensions:
+        - php
