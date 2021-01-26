@@ -2,3 +2,5 @@
 
 
 namespace Error;
+
+use TCPDF;
