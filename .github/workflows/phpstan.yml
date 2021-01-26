@@ -23,10 +23,10 @@ jobs:
           tools: composer:v2, cs2pr
 
       - name: "Install locked dependencies"
-        run: "composer install --no-interaction --no-progress --no-suggest"
+        run: "composer install --no-interaction --no-progress"
 
       - name: "phpstan LargeMemoryConsumption"
-        run: "../vendor/bin/phpstan analyse --debug -vvv src/LargeMemoryConsumption.php"
+        run: "./vendor/bin/phpstan analyse --debug -vvv src/LargeMemoryConsumption.php"
 
       - name: "phpstan MemoryConsumptionMini"
         run: "./vendor/bin/phpstan analyse --debug -vvv src/MemoryConsumptionMini.php"
