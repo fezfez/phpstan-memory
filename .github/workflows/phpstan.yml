@@ -20,7 +20,8 @@ jobs:
           php-version: "7.4"
           coverage: none
           ini-values: memory_limit=-1
-          tools: composer:v2,
+          tools: composer:v2
+          extensions: :pdo
 
       - name: "Install locked dependencies"
         run: "composer install --no-interaction --no-progress"
