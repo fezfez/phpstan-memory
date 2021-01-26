@@ -18,7 +18,7 @@ jobs:
         uses: "shivammathur/setup-php@v2"
         with:
           php-version: "7.4"
-          coverage: none
+          coverage: "pcov"
           ini-values: memory_limit=-1
           tools: composer:v2
           extensions: :amqp, :apcu, :bcmath, :bz2, :dba, :enchant, :gd, :gmp, :igbinary, :imap, :ldap, :memcache, :memcached, :mongodb, :msgpack, :odbc, :pdo_dblib, :PDO_Firebird, :PDO_ODBC, :pdo_pgsql, :pdo_sqlite, :pgsql, :pspell, :redis, :snmp, :soap, :sqlite3, :tidy, :xmlrpc, :yaml, :zip, :zmq
@@ -34,3 +34,6 @@ jobs:
 
       - name: "phpstan MemoryConsumptionMini"
         run: "./vendor/bin/phpstan analyse --debug -vvv src/MemoryConsumptionMini.php"
+
+      - name: "phpstan"
+        run: "./vendor/bin/phpstan analyse --debug -vvv src/"
