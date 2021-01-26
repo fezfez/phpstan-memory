@@ -28,26 +28,6 @@ sys	0m0,356s
 
 
 ```bash
-time ./vendor/bin/phpstan analyse --debug -vvv src/NoMemoryConsumption.php 
-Note: Using configuration file /home/fezfez/work/phpstan-memory/phpstan.neon.
-Result cache not used because of debug mode.
-/home/fezfez/work/phpstan-memory/src/NoMemoryConsumption.php
---- consumed 0 B, total 36 MB
-Result cache was not saved because only files were passed as analysed paths.
-
-                                                                                                                        
- [OK] No errors                                                                                                         
-                                                                                                                        
-
-Used memory: 36 MB
-
-real	0m0,304s
-user	0m0,234s
-sys	0m0,050s
-```
-
-
-```bash
 time ./vendor/bin/phpstan analyse --debug -vvv src/MemoryConsumptionMini.php 
 Note: Using configuration file /home/fezfez/work/phpstan-memory/phpstan.neon.
 Result cache not used because of debug mode.
