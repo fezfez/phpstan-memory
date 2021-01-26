@@ -17,13 +17,15 @@ jobs:
       - name: "Install PHP"
         uses: "shivammathur/setup-php@v2"
         with:
-          coverage: "pcov"
           php-version: "7.4"
           ini-values: memory_limit=-1
-          tools: composer:v2, cs2pr
+          tools: composer:v2,
 
       - name: "Install locked dependencies"
         run: "composer install --no-interaction --no-progress"
+
+      - name: "show php module"
+        run: "php -m"
 
       - name: "phpstan LargeMemoryConsumption"
         run: "./vendor/bin/phpstan analyse --debug -vvv src/LargeMemoryConsumption.php"
