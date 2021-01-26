@@ -52,17 +52,18 @@ time ./vendor/bin/phpstan analyse --debug -vvv src/MemoryConsumptionMini.php
 Note: Using configuration file /home/fezfez/work/phpstan-memory/phpstan.neon.
 Result cache not used because of debug mode.
 /home/fezfez/work/phpstan-memory/src/MemoryConsumptionMini.php
---- consumed 14 MB, total 50 MB
+--- consumed 22 MB, total 58 MB
 Result cache was not saved because only files were passed as analysed paths.
 
                                                                                                                         
  [OK] No errors                                                                                                         
                                                                                                                         
 
-Used memory: 50 MB
+Used memory: 58 MB
 
-real	0m0,357s
-user	0m0,287s
-sys	0m0,052s
+real	0m0,393s
+user	0m0,323s
+sys	0m0,053s
+
 
 ```
